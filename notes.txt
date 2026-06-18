@@ -1,0 +1,120 @@
+Database:
+----------
+>> Database is an organized collection of related data that can be stored, managed and retrived easily.
+
+DBMS - Database Mangement System
+---------------------------------
+It is software used to create and manage databse.
+Ex: MongDB, MySQL... 
+
+RDBMS  Relational DBMS 
+---------------------------
+>> It stores data in form of Tables (rows and cols).
+>> SQL is must.
+
+MySQL 
+------
+>> Relational Database Management System.
+Open source
+
+Database ---> table1,table.. ---> data 
+(Schema)
+
+Entity --> Realtime Object (Animal)
+Attributes ---> Name, color, weight, age
+
+Table --> animal_details --> cols --> animal_name, age, weight, color.
+
+
+SQL --> Structured Query Language.
+----
+Syntax 
+---------
+>> It is case-insensitive. (a=A)
+SELECT * FROM tbName;
+select * from tbName;
+>> the query should end with delimiter ";"
+
+Datatype 
+----------
+Numeric Datatypes 
+-------------------
+INT --> whole numbers
+FLOAT --> Decimal Numbers 
+BIGINT --> Larger Whole Numbers 
+DOUBLE --> Larger Decimal Numbers 
+
+String Datatypes 
+----------------
+CHAR(n) --> fixed length char string. char(5) --> "Hello", "Hi", "Priyanka"
+VARCHAR(n) --> Variable length Char String. VARCHAR(5) --> "Hi", "Priyanka"
+TEXT --> paragraph
+
+Boolean Datatypes
+--------------------
+BOOLEAN --> 0,1
+
+DATE and TIME 
+--------------
+DATE --> "yyyy-mm-dd" Ex: "2026-06-18"
+TIME --> "HH:MM:SS"
+DATETIME --> Both
+
+
+Constraints and Keys 
+------------------------
+Primary Key --> Used to identify each records uniquely. No null values and no duplicates.
+
+
+Operators 
+----------
+=          
+<> !=
+<
+>
+<=
+>=
+
+
+Queries:
+----------
+To Create Database ---> CREATE DATABASE dbName;
+To Select database --> USE dbName;
+To Create table --> CREATE TABLE tbName (
+    col1 datatype constraints,
+    col2 dt c,
+    .
+    .
+);
+
+To Create records --> INSERT INTO tbName (col details (optional)) VALUES (),()...;
+To Retrive Data from a Table --> SELECT (col details --> *) FROM tbName;
+To Update an existing Record --> UPDATE tbName SET col=val;
+To delete and existing Record ---> DELETE FROM tbName;
+
+
+CRUD 
+-----
+CREATE --> INSERT 
+READ --> SELECT
+UPDATE --> UPDATE
+DELETE --> DELETE
+
+SQL_SAFE_UPDATES --> Cannot update/delete more than 1 record. Where clause is must. condition must depend on PK.
+
+WHERE  
+------
+>> Used to perform filteration on records;
+Ex: SELECT, UPDATE, DELETE...... WHERE cond;
+
+condition is an expression that returns True/False;
+
+
+actorDetails 
+----------------
+name   age   id(pk)
+-------------------
+ken    21    1
+ben    33    2
+quen   30    3
+ken    33    4

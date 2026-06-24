@@ -156,3 +156,9 @@ ken    21    1
 ben    33    2
 quen   30    3
 ken    33    4
+
+
+300 --> mat result
+
+per page --> 10
+9st page ---> limit 10 offset (pageNum-1)*10

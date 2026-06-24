@@ -75,6 +75,44 @@ Operators
 <=
 >=
 
+BETWEEN (inclusive range)
+---------
+> Range filetring.
+Ex: ....WHERE col BETWEEN num1 AND num2; 
+
+IN, NOT IN 
+--------------
+Ex: WHERE col IN (val1,val2....);
+
+Logical Operators 
+-------------------
+AND 
+OR 
+NOT 
+
+LIKE 
+----
+>> Pattern matching.
+
+wildcards 
+--------------
+% --> it matches 0 - inf number of char.
+_ --> it matchesa only one char.
+
+Starts with 'a' --> "a%" --> "apple" , "ant", "ken", "a"
+Ends with 'a' --> "%a" --> "a", "anna"
+"___" --> "ken", "Benny"
+
+...WHERE col LIKE pattern;
+
+ORDER BY 
+-----------
+.... ORDER BY col asc/DESC;
+
+LIMIT/OFFSET 
+--------------
+>> limiting the records.
+.... LIMIT num OFFSET num;
 
 Queries:
 ----------

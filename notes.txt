@@ -114,6 +114,38 @@ LIMIT/OFFSET
 >> limiting the records.
 .... LIMIT num OFFSET num;
 
+Functions 
+--------------
+>> Predefined Operation.
+
+Numeric Functions 
+----------------------
+ROUND(dec,len) --> Rounds off a number. Ex: round(9.78956754,4) --> 9.7896
+FLOOR(dec)  ---> Floor value
+CEIL(dec) 
+ABS(num) --> Absolute Number 
+MOD(num1,num2)
+POWER(n1,n2)
+
+String Functions
+-------------------
+Concat(s1,s2.....) --> concatination.
+Length(str)
+UPPER(str)
+LOWER(str)
+TRIM(str)
+LTRIM(str)
+RTRIM(str)
+substring(str,start,len)
+replace(str, old, new)
+
+Date and Time Functions 
+----------------------------
+curdate()
+curtime()
+now()
+datediff(d1,d2)
+
 Queries:
 ----------
 To Create Database ---> CREATE DATABASE dbName;
@@ -147,18 +179,3 @@ Ex: SELECT, UPDATE, DELETE...... WHERE cond;
 
 condition is an expression that returns True/False;
 
-
-actorDetails 
-----------------
-name   age   id(pk)
--------------------
-ken    21    1
-ben    33    2
-quen   30    3
-ken    33    4
-
-
-300 --> mat result
-
-per page --> 10
-9st page ---> limit 10 offset (pageNum-1)*10

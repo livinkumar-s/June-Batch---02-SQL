@@ -63,7 +63,16 @@ DATETIME --> Both
 
 Constraints and Keys 
 ------------------------
+>> Rules that maintains data integrity.
+
 Primary Key --> Used to identify each records uniquely. No null values and no duplicates.
+Foreign Key --> Relationship between 2 tables. 
+
+AUTO_INCREMENT --> to generate serial numbers for each new rows.
+NOT NULL --> will not accept null values.
+UNIQUE --> no duplicates.
+DEFAULT --> add default value to a column.
+CHECK --> condition based insertion. CHECK (condition)
 
 
 Operators 
@@ -179,3 +188,24 @@ Ex: SELECT, UPDATE, DELETE...... WHERE cond;
 
 condition is an expression that returns True/False;
 
+Alter 
+------
+
+Cricketer
+-----------
+id  name            mail                        c   a
+--------------------------------------------------------
+1	Virat Kohli	    virat.kohli@example.com	    15	1
+2	Rohit Sharma	rohit.sharma@example.com	12	1
+3	MS Dhoni	    ms.dhoni@example.com	    11	1
+4	Sourav Ganguly	sourav.ganguly@example.com	13	0
+5	Yuvraj Singh	yuvraj.singh@example.com	14	0
+
+Jersey
+-----------
+id  jersey  playerId(fk-->Cricketer(id))
+------------------------
+1   7       3
+2   18      1
+3   45      2
+4   49      7(in valid)

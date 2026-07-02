@@ -190,6 +190,20 @@ condition is an expression that returns True/False;
 
 Alter 
 ------
+>> It modifies an existing structure of a table.
+
+Ex: ALTER TABLE tbName modification;
+
+To add a new column --> ...ADD colName DT cons;
+To add multiple new columns --> ...ADD colName1 DT cons, ADD colName DT,.....;(FIRST)
+To Modify DT --> ...MODIFY colName DT, MODIFY...;(datatype, constraint)
+To Rename a column --> ... CHANGE colName newName datatype;(rename)
+To Rename a col --> ..RENAME COLUMN colname TO newName;
+To Drop a column --> ....DROP COLUMN colName;
+
+To Rename a Table --> ....RENAME TO newTableName;
+To Drop a Table --> DROP TABLE tbname;
+To DROP db --> DROP DATABASE dbName;
 
 Joins
 ----------
@@ -225,22 +239,3 @@ CROSS JOIN
 >> all the records from left table will be matched with all the records from right table.
 
 EX: SELECT * FROM TB1 CROSS JOIN TB2;
-
-Cricketer
------------
-id  name            mail                        c   a
---------------------------------------------------------
-1	Virat Kohli	    virat.kohli@example.com	    15	1
-2	Rohit Sharma	rohit.sharma@example.com	12	1
-3	MS Dhoni	    ms.dhoni@example.com	    11	1
-4	Sourav Ganguly	sourav.ganguly@example.com	13	0
-5	Yuvraj Singh	yuvraj.singh@example.com	14	0
-
-iplteam
-------------
-id  tn  playerId
--------------------
-1	MI	    2
-2	RCB	    1
-3	CSK	    3
-4	DC	    9

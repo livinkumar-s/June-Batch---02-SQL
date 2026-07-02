@@ -191,6 +191,41 @@ condition is an expression that returns True/False;
 Alter 
 ------
 
+Joins
+----------
+>> Combining records from two or more table.
+
+INNER JOIN 
+------------
+>> Returns all matching records.
+Ex: SELECT colDetails FROM TB1 INNER JOIN TB2 ON relationship;
+
+LEFT OUTER JOIN 
+-----------------
+>> Returns all record from LEFT table.
+>> Only matching records from RIGHT table.
+Ex: SELECT colDetails FROM TB1 LEFT JOIN TB2 ON relationship;
+
+RIGHT OUTER JOIN 
+-----------------
+>> Returns all record from RIGHT table.
+>> Only matching records from LEFT table.
+Ex: SELECT colDetails FROM TB1 RIGHT JOIN TB2 ON relationship;
+
+FULL OUTER JOIN 
+-----------------
+>> Returns all record from BOTH tables.
+Ex: 
+SELECT colDetails FROM TB1 RIGHT JOIN TB2 ON relationship
+UNION
+SELECT colDetails FROM TB1 LEFT JOIN TB2 ON relationship;
+
+CROSS JOIN 
+-------------
+>> all the records from left table will be matched with all the records from right table.
+
+EX: SELECT * FROM TB1 CROSS JOIN TB2;
+
 Cricketer
 -----------
 id  name            mail                        c   a
@@ -201,11 +236,11 @@ id  name            mail                        c   a
 4	Sourav Ganguly	sourav.ganguly@example.com	13	0
 5	Yuvraj Singh	yuvraj.singh@example.com	14	0
 
-Jersey
------------
-id  jersey  playerId(fk-->Cricketer(id))
-------------------------
-1   7       3
-2   18      1
-3   45      2
-4   49      7(in valid)
+iplteam
+------------
+id  tn  playerId
+-------------------
+1	MI	    2
+2	RCB	    1
+3	CSK	    3
+4	DC	    9

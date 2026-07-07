@@ -73,6 +73,7 @@ NOT NULL --> will not accept null values.
 UNIQUE --> no duplicates.
 DEFAULT --> add default value to a column.
 CHECK --> condition based insertion. CHECK (condition)
+ENUM --> enum(opt1,op2...) Ex: gender enum("male","female")
 
 
 Operators 
@@ -239,3 +240,23 @@ CROSS JOIN
 >> all the records from left table will be matched with all the records from right table.
 
 EX: SELECT * FROM TB1 CROSS JOIN TB2;
+
+Aggregation and Grouping 
+---------------------------
+>> Combining multiple rows into a single summarized result.
+
+Aggregate Functions 
+--------------------
+COUNT --> count(*), count(colName)
+SUM --> finds sum
+AVG --> average
+MIN --> smallest
+MAX --> largest
+
+Grouping 
+-----------
+>> grouping records that have same values in a column.
+Ex: select aggr()....... GROUP BY col;
+
+filter records --> where
+filter group --> HAVING

@@ -260,3 +260,22 @@ Ex: select aggr()....... GROUP BY col;
 
 filter records --> where
 filter group --> HAVING
+
+Subqueries 
+--------------
+>> It is a query written inside another query.
+Ex: main query.....(inner query)
+>> inner query executes first.
+
+Single Row Subquery 
+---------------------
+>> subquery returns a single row.
+
+Multi Row Subquery 
+---------------------
+>> subquery returns more than single row.
+IN, ALL, ANY
+
+Correlatted Subquery 
+------------------------
+>> inner query depends on outer. outer query depends on inner.

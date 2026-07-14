@@ -156,6 +156,12 @@ curtime()
 now()
 datediff(d1,d2)
 
+DDL --> Data Definition Language --> CREATE, ALTER, TRUNCATE, RENAME....
+DML --> Data Manipulation Language --> INSERT, UPDATE, DELETE....
+DQL --> Data Query Language --> SELECT 
+TCL --> Transaction Control Language --> COMMIT, ROLLBACK
+DCL --> Data Control Language --> GRANT, REVOKE..
+
 Queries:
 ----------
 To Create Database ---> CREATE DATABASE dbName;
@@ -205,6 +211,7 @@ To Drop a column --> ....DROP COLUMN colName;
 To Rename a Table --> ....RENAME TO newTableName;
 To Drop a Table --> DROP TABLE tbname;
 To DROP db --> DROP DATABASE dbName;
+To clear a table --> TRUNCATE TABLE tbname;
 
 Joins
 ----------
@@ -279,3 +286,42 @@ IN, ALL, ANY
 Correlatted Subquery 
 ------------------------
 >> inner query depends on outer. outer query depends on inner.
+
+Views
+---------
+>> Virtual table from SELECT query.
+>> does not store actual data.
+
+Security
+
+col1,col2....col10
+
+clients --> col2,3,4
+admins --> col1-7
+super admin --> col1-10
+
+To Create View --> CREATE VIEW viewName AS SELECT.....
+
+stuudent --> name, mark
+teacher ---> name, age, email, mark
+
+COMMIT, AUTOCOMMIT, ROLLBACK
+
+Transaction
+----------------
+Transaction is a group of SQL statements execured as one unit.
+
+START TRANSACTION:
+query1
+query2
+.
+.
+query 10
+COMMIT/ROLLBACK
+
+ACID 
+--------
+Atomimicity --> All or nothing
+Consistancy --> DN remains valid 
+Isolation --> Transactions won't interfere.
+Duratily --> Committed data is permanent
